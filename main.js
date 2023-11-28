@@ -149,13 +149,9 @@ function handleClick (x) {
         }
     }
     if (x == current.n) {
-        buttons[x].classList.remove("incorrect")
-        buttons[x].classList.add("correct")
         data.c += 1
         correct.play()
     } else {
-        buttons[x].classList.remove("correct")
-        buttons[x].classList.add("incorrect")
         incorrect.play()
     }
     data.t += 1
